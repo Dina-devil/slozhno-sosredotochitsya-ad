@@ -1,25 +1,35 @@
 :root.theme-light {
+    --bg-color: #fff1f7;
+    --title-decor-color: #353430;
+    --content__section-title-color: #353430;
+    --bg-image: url(../images/cover-image-light.png);
     --accent-color: #ff8dcb;
     --title-color: #ffc2e6;
-    --text-color: #353430;
-    --menu-color: #353430;
-    --menu-hover-color: rgba(53, 52, 48, 0.4);
-    --decorated-text-color: #353430;
-    --decorated-zone-border-color: #353430;
-    --bg-color: #fff1f7;
-    --bg-image: url(../images/cover-image-light.png);
+    --main-font-color: #353430;
+    --hover-border-color: rgba(50 49 45/ 0.4);
+    --button-color: #353430;
+    --decor-color: #353430;
 }
 
 @media (prefers-color-scheme: light) {
     :root {
-        --accent-color: #ff8dcb;
-        --title-color: #ffc2e6;
-        --text-color: #353430;
-        --menu-color: #353430;
-        --menu-hover-color: rgba(53, 52, 48, 0.4);
-        --decorated-text-color: #353430;
-        --decorated-zone-border-color: #353430;
         --bg-color: #fff1f7;
         --bg-image: url(../images/cover-image-light.png);
+        --title-decor-color: #353430;
+        --content__section-title-color: #353430;
+        --accent-color: #ff8dcb;
+        --title-color: #ffc2e6;
+        --main-font-color: #353430;
+        --decor-color: #353430;
+        --hover-border-color: rgba(50 49 45/ 0.4);
+        --button-color: #353430;
     }
+
+    .header__decorative-inscription {
+        display: none;
+    }
+}
+
+.theme-light .header__decorative-inscription {
+    display: none;
 }
